@@ -7,7 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#16CD1D</color>
 
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#FFFFFF</color>
+    <color name="mtrl_textinput_default_box_stroke_color1" tools:override="true">#FF0000</color>
+    <color name="mtrl_textinput_default_box_stroke_color2" tools:override="true">#16CD1D</color>
 
 </resources>
