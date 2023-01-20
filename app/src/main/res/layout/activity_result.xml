@@ -26,7 +26,7 @@
         android:id="@+id/loseTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Вы\nпроиграли"
+        android:text="@string/lose"
         android:textAlignment="center"
         android:textColor="@color/red"
         android:textSize="40sp"
@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="150dp"
-        android:text="81"
+
         android:textAlignment="center"
         android:textColor="@color/green"
         android:textSize="40sp"

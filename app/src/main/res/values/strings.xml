@@ -3,4 +3,5 @@
     <string name="textSecond">Решите задачу, чтобы\nперейти на следующую\nстраницу</string>
     <string name="hintAnswer"><font size="22">Answer</font></string>
     <string name="win">Вы\nвыиграли</string>
+    <string name="lose">Вы\nпроиграли</string>
 </resources>
