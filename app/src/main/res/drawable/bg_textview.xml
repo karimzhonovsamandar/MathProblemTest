@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <item
-        android:drawable="@drawable/ic_baseline_check_24"><shape>
-    <corners
-        android:radius="10dp"/>
-    <solid android:color="@color/white"
-        />
-    <stroke/>
-        </shape>
-    </item>
+    <corners android:radius="10dp" />
+    <solid android:color="#292E49" />
+    <stroke android:color="@color/white"
+        android:width="2dp"/>
 
-</selector>
+</shape>

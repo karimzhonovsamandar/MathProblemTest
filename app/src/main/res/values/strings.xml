@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MathProblemTest</string>
+    <string name="textSecond">Решите задачу, чтобы\nперейти на следующую\nстраницу</string>
 </resources>
