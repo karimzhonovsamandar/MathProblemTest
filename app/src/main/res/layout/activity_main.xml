@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#292E49"
+    android:background="@color/bg_color"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -86,7 +86,7 @@
         app:counterMaxLength="14"
         app:counterTextColor="@color/white"
 
-        app:helperText="Обязательно*"
+
         app:helperTextTextColor="#FF0000"
 
         app:prefixText="+998"
