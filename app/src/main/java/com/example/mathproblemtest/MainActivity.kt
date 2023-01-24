@@ -22,12 +22,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         numberFormat()
-
         onProgress()
 
         binding.checkButton.setOnClickListener {
             nullCheck()
-            numberFormat()
             login()
         }
 
@@ -119,7 +117,6 @@ class MainActivity : AppCompatActivity() {
                         }
                         /** remove the watcher  so you can not capture the affectation you are going to make, to avoid infinite loop on text change **/
                         binding.passwordEditText.removeTextChangedListener(this);
-
                         /** set the new text to the EditText **/
                         binding.passwordEditText.setText(phone.toString());
                         /** bring the cursor to the end of input **/
@@ -156,6 +153,8 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
+
         binding.passwordEditText.doOnTextChanged { text, start, before, count ->
             if (text!!.isNotEmpty()){
                 binding.passwordLayoutEditText.helperText = ""
@@ -171,12 +170,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun login() {
-        if (binding.loginEditText.text.toString().trim() == "Samandar" && binding.passwordEditText.text.toString().trim() == "(90) 408-74-24" ) {
+        if (binding.loginEditText.text.toString().trim() == "Samandar" //
+            &&
+            binding.passwordEditText.text.toString().trim() == "(90) 408-74-24" ) {  // 90 408 74-24
             startActivity(Intent(this, ProblemActivity::class.java))
-        }
-
-        else if (binding.loginEditText.text.toString() == "" || binding.passwordEditText.text.toString() == "" ) {
-            nullCheck()
         }
 
         else{

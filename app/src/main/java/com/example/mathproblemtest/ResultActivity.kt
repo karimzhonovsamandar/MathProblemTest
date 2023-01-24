@@ -16,14 +16,15 @@ class ResultActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val intent = intent
-        val answer = intent.getStringExtra("true")
+        val answer = intent.getStringExtra("true") //Yes
         val rightNumber = intent.getStringExtra("rightNumber")
         if (answer == "Yes") {
             binding.wonTextView.isVisible = true // type 1
         } else {
-            binding.loseTextView.isVisible = true
-            binding.rightAnswerText.isVisible = true
-            binding.rightAnswerNumber.visibility = View.VISIBLE // type 2
+            binding.loseTextView.isVisible = true //вы проиграли
+            binding.rightAnswerText.isVisible = true // правильный ответ
+
+            /*binding.rightAnswerNumber.visibility = View.VISIBLE */// type 2
 
             binding.rightAnswerNumber.text = rightNumber
         }

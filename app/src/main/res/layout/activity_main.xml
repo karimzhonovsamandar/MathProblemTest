@@ -35,11 +35,12 @@
         android:textColorHint="@color/white"
         app:hintTextColor="#00F30A"
 
+
         app:startIconDrawable="@drawable/ic_login"
         app:startIconTint="@color/white"
 
         app:counterEnabled="true"
-        app:counterMaxLength="14"
+        app:counterMaxLength="18"
         app:counterTextColor="@color/white"
 
 
@@ -49,6 +50,7 @@
         app:endIconTint="#00F30A"
 
         app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +62,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:maxLength="14"/>
+            android:maxLength="18"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -103,7 +106,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-
             android:textColor="@color/white"
             android:maxLength="14"/>
 

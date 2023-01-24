@@ -27,6 +27,7 @@ class ProblemActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProblemBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         onRandom()
 
         binding.checkButton.setOnClickListener {
@@ -34,22 +35,20 @@ class ProblemActivity : AppCompatActivity() {
             if (binding.answerEditText.text.toString() == "") {
                 shake()
             } else {
-                userAnswer = binding.answerEditText.text.toString().toInt()
+                userAnswer = binding.answerEditText.text.toString().toInt() //55
                 if (userAnswer != resultGlobal) {
-                    val intent = Intent(this,ResultActivity::class.java)
-                    intent.putExtra("true","No")
-                    intent.putExtra("rightNumber" , resultGlobal.toString())
+                    val intent = Intent(this, ResultActivity::class.java)
+                    intent.putExtra("true", "No")
+                    intent.putExtra("rightNumber", resultGlobal.toString())
                     startActivity(intent)
-                   /* shake()
-                    errorAnswer()*/
+                    shake()
+                     errorAnswer()
                 } else {
                     onCheck()
                 }
             }
 
-
         }
-
     }
 
     fun onRandom() {
@@ -68,11 +67,11 @@ class ProblemActivity : AppCompatActivity() {
     }
 
     fun onCheck() {
-        if (userAnswer == resultGlobal) {
-            val intent = Intent(this,ResultActivity::class.java)
-            intent.putExtra("true","Yes")
-            startActivity(intent)
-        }
+
+        val intent = Intent(this, ResultActivity::class.java)
+        intent.putExtra("true", "Yes")
+        startActivity(intent)
+
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
