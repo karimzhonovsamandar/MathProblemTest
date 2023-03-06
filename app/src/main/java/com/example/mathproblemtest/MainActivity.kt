@@ -154,7 +154,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
         binding.passwordEditText.doOnTextChanged { text, start, before, count ->
             if (text!!.isNotEmpty()){
                 binding.passwordLayoutEditText.helperText = ""

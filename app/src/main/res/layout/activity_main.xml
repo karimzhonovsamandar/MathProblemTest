@@ -35,14 +35,12 @@
         android:textColorHint="@color/white"
         app:hintTextColor="#00F30A"
 
-
         app:startIconDrawable="@drawable/ic_login"
         app:startIconTint="@color/white"
 
         app:counterEnabled="true"
         app:counterMaxLength="18"
-        app:counterTextColor="@color/white"
-
+        app:counterTextColor="#FBFBFB"
 
         app:helperTextTextColor="#FF0000"
 
@@ -50,7 +48,6 @@
         app:endIconTint="#00F30A"
 
         app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
-
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,6 +72,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+
         android:hint="Password"
         android:textColorHint="@color/white"
         app:hintTextColor="#00F30A"
